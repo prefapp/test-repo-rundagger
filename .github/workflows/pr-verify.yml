@@ -10,7 +10,7 @@ jobs:
         with:
           workflow: on-premise
           config_file: .github/firestarter.yml
-          args: |
+          vars: |
             foo='bar'
           secrets: |
             secret1='topsecret'
