@@ -8,6 +8,7 @@ jobs:
       - name: Call composite action
         uses: prefapp/run-dagger-py@main
         with:
+          working_directory: foo
           workflow: on-premise
           config_file: .github/firestarter.yml
           vars: |
