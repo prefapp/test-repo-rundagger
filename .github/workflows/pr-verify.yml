@@ -1,0 +1,16 @@
+name: Dagger magic
+on:
+  workflow_dispatch:
+jobs:
+  call-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call composite action
+        uses: prefapp/run-dagger-py@main
+        with:
+          workflow: on-premise
+          config_file: .github/firestarter.yml
+          args: |
+            foo='bar'
+          secrets: |
+            secret1='topsecret'
