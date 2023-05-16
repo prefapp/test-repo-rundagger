@@ -1,10 +1,9 @@
 [tool.poetry]
-name = "-dagger"
+name = "foo"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["Jose Alvarez <jose.alvarez@prefapp.es>"]
 readme = "README.md"
-packages = [{include = "dagger"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
