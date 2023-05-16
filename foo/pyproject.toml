@@ -7,6 +7,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+firestarter-workflows = {git = "https://github.com/prefapp/firestarter-workflows.git", rev = "main"}
 
 
 [build-system]
