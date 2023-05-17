@@ -2,7 +2,7 @@
 name = "firestarter"
 version = "0.1.0"
 description = ""
-authors = ["Javier Gomez Rodriguez <javiergr@ext.zara.com>"]
+authors = ["Javier Gomez Rodriguez <javier.gomez@prefapp.es>"]
 
 [tool.poetry.scripts]
 dagger = "firestarter.parser:parse"
