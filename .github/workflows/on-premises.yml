@@ -31,10 +31,10 @@ jobs:
         with:
           working_directory: .dagger
           workflow: on_premises
-          config_file: tmp/.dagger/firestarter.yml
+          config_file: tmp/config.yml
           vars: |
             repo_name='${{ github.repository }}'
             from_point='${{ github.event.inputs.from }}'
             on_premises='${{ github.event.inputs.on_premises }}'
           secrets: |
-            secret1='topsecret'
+            github_token='${{ github.token }}'
