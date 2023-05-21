@@ -1,0 +1,40 @@
+name: Dagger magic
+on:
+  workflow_dispatch:
+    inputs:
+      from:
+        type: string
+        description: 'Origin commit or tag'
+        required: true
+        default: ''
+      on_premises:
+        type: string
+        description: 'On-premises name/s | one (alone), several(separated by commas) or all (*)'
+        required: true
+        default: '*' # all
+jobs:
+  call-action:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.inputs.from }}
+
+      - name: Checkout repository to get on-premises file
+        uses: actions/checkout@v3
+        with:
+          path: tmp
+
+      - name: Call run-dagger-py action
+        uses: prefapp/run-dagger-py@main
+        with:
+          working_directory: .dagger
+          workflow: on_premises
+          config_file: tmp/.dagger/firestarter.yml
+          vars: |
+            repo_name='${{ github.repository }}'
+            from_point='${{ github.event.inputs.from }}'
+            on_premises='${{ github.event.inputs.on_premises }}'
+          secrets: |
+            secret1='topsecret'
