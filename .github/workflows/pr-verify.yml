@@ -13,7 +13,6 @@ jobs:
         with:
           workflow: pr_verify
           config_file: .github/firestarter.yml
-          working_directory: .
           pyproject_path: .dagger
           vars: |
             foo='bar'
