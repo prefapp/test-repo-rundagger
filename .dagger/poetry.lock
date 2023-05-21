@@ -1814,6 +1814,7 @@ files = [
 
 [package.dependencies]
 attrs = ">=20"
+exceptiongroup = {version = "*", markers = "python_version < \"3.11\""}
 
 [[package]]
 name = "certifi"
@@ -2150,6 +2151,21 @@ ssh = ["paramiko (>=2.4.2)"]
 tls = ["cryptography (>=3.4.7)", "idna (>=2.0.0)", "pyOpenSSL (>=17.5.0)"]
 
 [[package]]
+name = "exceptiongroup"
+version = "1.1.1"
+description = "Backport of PEP 654 (exception groups)"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "exceptiongroup-1.1.1-py3-none-any.whl", hash = "sha256:232c37c63e4f682982c8b6459f33a8981039e5fb8756b2074364e5055c498c9e"},
+    {file = "exceptiongroup-1.1.1.tar.gz", hash = "sha256:d484c3090ba2889ae2928419117447a14daf3c1231d5e30d0aae34f354f01785"},
+]
+
+[package.extras]
+test = ["pytest (>=6)"]
+
+[[package]]
 name = "fabric"
 version = "2.7.1"
 description = "High level SSH command execution"
@@ -2176,22 +2192,25 @@ version = "0.1.0"
 description = "Firestarter standard Dagger workflows"
 category = "main"
 optional = false
-python-versions = "^3.11"
+python-versions = "^3.10"
 files = []
 develop = false
 
 [package.dependencies]
 anyio = {version = "3.6.2", markers = "python_full_version >= \"3.6.2\""}
-azure-cli = {version = "2.46.0", markers = "python_version >= \"2.7\" and python_version < \"2.8\" or python_full_version >= \"3.6.0\""}
+azure-cli = {version = "2.46.0", optional = true, markers = "python_version >= \"2.7\" and python_version < \"2.8\" or python_full_version >= \"3.6.0\""}
 dagger-io = {version = "0.5.3", markers = "python_version >= \"3.10\" and python_version < \"4.0\""}
-docker = {version = "5.0.3", markers = "python_version >= \"3.6\""}
+docker = {version = "5.0.3", optional = true, markers = "python_version >= \"3.6\""}
 pyyaml = {version = "5.4.1", markers = "python_version >= \"2.7\" and python_version < \"2.8\" or python_full_version >= \"3.6.0\""}
+
+[package.extras]
+on-premises = ["azure-cli (==2.46.0)", "docker (==5.0.3)"]
 
 [package.source]
 type = "git"
 url = "https://github.com/prefapp/firestarter-workflows"
 reference = "main"
-resolved_reference = "79493e390b9866eedc4df4a0a02cd5db92f974c3"
+resolved_reference = "52a7472ac6ddf6c668ff1a4d0ffce16292da2d9c"
 
 [[package]]
 name = "gql"
@@ -2246,14 +2265,14 @@ files = [
 
 [[package]]
 name = "httpcore"
-version = "0.17.0"
+version = "0.17.1"
 description = "A minimal low-level HTTP client."
 category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "httpcore-0.17.0-py3-none-any.whl", hash = "sha256:0fdfea45e94f0c9fd96eab9286077f9ff788dd186635ae61b312693e4d943599"},
-    {file = "httpcore-0.17.0.tar.gz", hash = "sha256:cc045a3241afbf60ce056202301b4d8b6af08845e3294055eb26b09913ef903c"},
+    {file = "httpcore-0.17.1-py3-none-any.whl", hash = "sha256:628e768aaeec1f7effdc6408ba1c3cdbd7487c1fc570f7d66844ec4f003e1ca4"},
+    {file = "httpcore-0.17.1.tar.gz", hash = "sha256:caf508597c525f9b8bfff187e270666309f63115af30f7d68b16143a403c8356"},
 ]
 
 [package.dependencies]
@@ -2268,14 +2287,14 @@ socks = ["socksio (>=1.0.0,<2.0.0)"]
 
 [[package]]
 name = "httpx"
-version = "0.24.0"
+version = "0.24.1"
 description = "The next generation HTTP client."
 category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "httpx-0.24.0-py3-none-any.whl", hash = "sha256:447556b50c1921c351ea54b4fe79d91b724ed2b027462ab9a329465d147d5a4e"},
-    {file = "httpx-0.24.0.tar.gz", hash = "sha256:507d676fc3e26110d41df7d35ebd8b3b8585052450f4097401c9be59d928c63e"},
+    {file = "httpx-0.24.1-py3-none-any.whl", hash = "sha256:06781eb9ac53cde990577af654bd990a4949de37a28bdb4a230d434f3a30b9bd"},
+    {file = "httpx-0.24.1.tar.gz", hash = "sha256:5853a43053df830c20f8110c5e69fe44d035d850b2dfe795e196f00fdb774bdd"},
 ]
 
 [package.dependencies]
@@ -3435,5 +3454,5 @@ multidict = ">=4.0"
 
 [metadata]
 lock-version = "2.0"
-python-versions = "^3.11"
-content-hash = "76ed0f86c808c5a898550d24c1fc31c4815b0059aecf3e08fc0560e7e4834d6f"
+python-versions = "^3.10"
+content-hash = "5c407d8cffcacd576ae9678bab56bafe160c6e48e9bce8750809be94578fa115"
