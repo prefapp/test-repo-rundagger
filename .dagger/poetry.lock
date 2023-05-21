@@ -2204,13 +2204,13 @@ docker = {version = "5.0.3", optional = true, markers = "python_version >= \"3.6
 pyyaml = {version = "5.4.1", markers = "python_version >= \"2.7\" and python_version < \"2.8\" or python_full_version >= \"3.6.0\""}
 
 [package.extras]
-on-premises = ["azure-cli (==2.46.0)", "docker (==5.0.3)"]
+build-images = ["azure-cli (==2.46.0)", "docker (==5.0.3)"]
 
 [package.source]
 type = "git"
 url = "https://github.com/prefapp/firestarter-workflows"
 reference = "main"
-resolved_reference = "52a7472ac6ddf6c668ff1a4d0ffce16292da2d9c"
+resolved_reference = "6609279659b74c6b2f5c3760900b8178ca12b9a1"
 
 [[package]]
 name = "gql"
@@ -3455,4 +3455,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "5c407d8cffcacd576ae9678bab56bafe160c6e48e9bce8750809be94578fa115"
+content-hash = "6a3c19954de5fbca083fff03d14ef86490d5f6465f9afb0a6d6aab6e72fc7f2d"
