@@ -12,11 +12,13 @@ python = "^3.10"
 
 [tool.poetry.group.build_images]
 optional = true
+
 [tool.poetry.group.build_images.dependencies]
 firestarter-workflows = {git = "https://github.com/prefapp/firestarter-workflows", rev = "main", extras=["build_images"]}
 
 [tool.poetry.group.pr_verify]
 optional = true
+
 [tool.poetry.group.pr_verify.dependencies]
 firestarter-workflows = {git = "https://github.com/prefapp/firestarter-workflows", rev = "main", extras=["pr_verify"]}
 

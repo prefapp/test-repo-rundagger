@@ -4,7 +4,7 @@
 name = "adal"
 version = "1.2.7"
 description = "Note: This library is already replaced by MSAL Python, available here: https://pypi.org/project/msal/ .ADAL Python remains available here as a legacy. The ADAL for Python library makes it easy for python application to authenticate to Azure Active Directory (AAD) in order to access AAD protected web resources."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -22,7 +22,7 @@ requests = ">=2.0.0,<3"
 name = "antlr4-python3-runtime"
 version = "4.9.3"
 description = "ANTLR 4.9.3 runtime for Python 3.7"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -33,7 +33,7 @@ files = [
 name = "anyio"
 version = "3.6.2"
 description = "High level compatibility layer for multiple asynchronous event loop implementations"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6.2"
 files = [
@@ -54,7 +54,7 @@ trio = ["trio (>=0.16,<0.22)"]
 name = "applicationinsights"
 version = "0.11.10"
 description = "This project extends the Application Insights API surface to support Python."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -66,7 +66,7 @@ files = [
 name = "argcomplete"
 version = "2.1.2"
 description = "Bash tab completion for argparse"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -82,7 +82,7 @@ test = ["coverage", "flake8", "mypy", "pexpect", "wheel"]
 name = "attrs"
 version = "23.1.0"
 description = "Classes Without Boilerplate"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -101,7 +101,7 @@ tests-no-zope = ["cloudpickle", "hypothesis", "mypy (>=1.1.1)", "pympler", "pyte
 name = "azure-appconfiguration"
 version = "1.1.1"
 description = "Microsoft App Configuration Data Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -120,7 +120,7 @@ async = ["aiodns (>=2.0)", "aiohttp (>=3.0)"]
 name = "azure-batch"
 version = "13.0.0"
 description = "Microsoft Azure Batch Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -136,7 +136,7 @@ msrestazure = ">=0.4.32,<2.0.0"
 name = "azure-cli"
 version = "2.46.0"
 description = "Microsoft Azure Command-Line Tools"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7.0"
 files = [
@@ -250,7 +250,7 @@ xmltodict = ">=0.12,<1.0"
 name = "azure-cli-core"
 version = "2.46.0"
 description = "Microsoft Azure Command-Line Tools Core Module"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7.0"
 files = [
@@ -282,7 +282,7 @@ requests = {version = "*", extras = ["socks"]}
 name = "azure-cli-telemetry"
 version = "1.0.8"
 description = "Microsoft Azure CLI Telemetry Package"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -298,7 +298,7 @@ portalocker = ">=1.6,<3"
 name = "azure-common"
 version = "1.1.28"
 description = "Microsoft Azure Client Library for Python (Common)"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -310,7 +310,7 @@ files = [
 name = "azure-core"
 version = "1.26.4"
 description = "Microsoft Azure Core Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -330,7 +330,7 @@ aio = ["aiohttp (>=3.0)"]
 name = "azure-cosmos"
 version = "3.2.0"
 description = "Azure Cosmos Python SDK"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -346,7 +346,7 @@ six = ">=1.6"
 name = "azure-data-tables"
 version = "12.4.0"
 description = "Microsoft Azure Azure Data Tables Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -362,7 +362,7 @@ msrest = ">=0.6.21"
 name = "azure-datalake-store"
 version = "0.0.53"
 description = "Azure Data Lake Store Filesystem Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -379,7 +379,7 @@ requests = ">=2.20.0"
 name = "azure-graphrbac"
 version = "0.60.0"
 description = "Microsoft Azure Graph RBAC Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -396,7 +396,7 @@ msrestazure = ">=0.4.32,<2.0.0"
 name = "azure-keyvault"
 version = "1.1.0"
 description = "Microsoft Azure Key Vault Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -416,7 +416,7 @@ requests = ">=2.18.4"
 name = "azure-keyvault-administration"
 version = "4.0.0b3"
 description = "Microsoft Azure Key Vault Administration Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -433,7 +433,7 @@ msrest = ">=0.6.21"
 name = "azure-keyvault-keys"
 version = "4.8.0b2"
 description = "Microsoft Azure Key Vault Keys Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -452,7 +452,7 @@ typing-extensions = ">=4.0.1"
 name = "azure-loganalytics"
 version = "0.1.1"
 description = "Microsoft Azure Log Analytics Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -468,7 +468,7 @@ msrest = ">=0.5.0"
 name = "azure-mgmt-advisor"
 version = "9.0.0"
 description = "Microsoft Azure Advisor Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -485,7 +485,7 @@ msrest = ">=0.5.0"
 name = "azure-mgmt-apimanagement"
 version = "3.0.0"
 description = "Microsoft Azure API Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -502,7 +502,7 @@ msrest = ">=0.6.21"
 name = "azure-mgmt-appconfiguration"
 version = "2.2.0"
 description = "Microsoft Azure App Configuration Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -519,7 +519,7 @@ msrest = ">=0.7.1"
 name = "azure-mgmt-applicationinsights"
 version = "1.0.0"
 description = "Microsoft Azure Application Insights Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -536,7 +536,7 @@ msrest = ">=0.5.0"
 name = "azure-mgmt-authorization"
 version = "3.0.0"
 description = "Microsoft Azure Authorization Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -553,7 +553,7 @@ msrest = ">=0.7.1"
 name = "azure-mgmt-batch"
 version = "17.0.0"
 description = "Microsoft Azure Batch Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -570,7 +570,7 @@ msrest = ">=0.7.1"
 name = "azure-mgmt-batchai"
 version = "7.0.0b1"
 description = "Microsoft Azure Batchai Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -587,7 +587,7 @@ msrest = ">=0.6.21"
 name = "azure-mgmt-billing"
 version = "6.0.0"
 description = "Microsoft Azure Billing Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -604,7 +604,7 @@ msrest = ">=0.6.21"
 name = "azure-mgmt-botservice"
 version = "2.0.0"
 description = "Microsoft Azure Bot Service Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -621,7 +621,7 @@ msrest = ">=0.7.1"
 name = "azure-mgmt-cdn"
 version = "12.0.0"
 description = "Microsoft Azure CDN Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -638,7 +638,7 @@ msrest = ">=0.6.21"
 name = "azure-mgmt-cognitiveservices"
 version = "13.3.0"
 description = "Microsoft Azure Cognitive Services Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -655,7 +655,7 @@ msrest = ">=0.7.1"
 name = "azure-mgmt-compute"
 version = "29.1.0"
 description = "Microsoft Azure Compute Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -672,7 +672,7 @@ msrest = ">=0.7.1"
 name = "azure-mgmt-consumption"
 version = "2.0.0"
 description = "Microsoft Azure Consumption Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -689,7 +689,7 @@ msrestazure = ">=0.4.20,<2.0.0"
 name = "azure-mgmt-containerinstance"
 version = "10.1.0"
 description = "Microsoft Azure Container Instance Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -706,7 +706,7 @@ isodate = ">=0.6.1,<1.0.0"
 name = "azure-mgmt-containerregistry"
 version = "10.1.0"
 description = "Microsoft Azure Container Registry Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -723,7 +723,7 @@ msrest = ">=0.7.1"
 name = "azure-mgmt-containerservice"
 version = "21.2.0"
 description = "Microsoft Azure Container Service Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -740,7 +740,7 @@ msrest = ">=0.7.1"
 name = "azure-mgmt-core"
 version = "1.4.0"
 description = "Microsoft Azure Management Core Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -755,7 +755,7 @@ azure-core = ">=1.26.2,<2.0.0"
 name = "azure-mgmt-cosmosdb"
 version = "9.0.0"
 description = "Microsoft Azure Cosmos DB Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -772,7 +772,7 @@ msrest = ">=0.7.1"
 name = "azure-mgmt-databoxedge"
 version = "1.0.0"
 description = "Microsoft Azure Databoxedge Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -789,7 +789,7 @@ msrest = ">=0.6.21"
 name = "azure-mgmt-datalake-analytics"
 version = "0.2.1"
 description = "Microsoft Azure Data Lake Analytics Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -806,7 +806,7 @@ msrestazure = ">=0.4.7,<2.0.0"
 name = "azure-mgmt-datalake-nspkg"
 version = "3.0.1"
 description = "Microsoft Azure Data Lake Management Namespace Package [Internal]"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -822,7 +822,7 @@ azure-mgmt-nspkg = ">=3.0.0"
 name = "azure-mgmt-datalake-store"
 version = "0.5.0"
 description = "Microsoft Azure Data Lake Store Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -839,7 +839,7 @@ msrestazure = ">=0.4.27,<2.0.0"
 name = "azure-mgmt-datamigration"
 version = "10.0.0"
 description = "Microsoft Azure Data Migration Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -856,7 +856,7 @@ msrest = ">=0.6.21"
 name = "azure-mgmt-devtestlabs"
 version = "4.0.0"
 description = "Microsoft Azure DevTestLabs Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -873,7 +873,7 @@ msrestazure = ">=0.4.32,<2.0.0"
 name = "azure-mgmt-dns"
 version = "8.0.0"
 description = "Microsoft Azure DNS Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -890,7 +890,7 @@ msrest = ">=0.6.21"
 name = "azure-mgmt-eventgrid"
 version = "10.2.0b2"
 description = "Microsoft Azure Event Grid Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -907,7 +907,7 @@ msrest = ">=0.6.21"
 name = "azure-mgmt-eventhub"
 version = "10.1.0"
 description = "Microsoft Azure Event Hub Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -924,7 +924,7 @@ msrest = ">=0.6.21"
 name = "azure-mgmt-extendedlocation"
 version = "1.0.0b2"
 description = "Microsoft Azure Extendedlocation Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -941,7 +941,7 @@ msrest = ">=0.6.21"
 name = "azure-mgmt-hdinsight"
 version = "9.0.0"
 description = "Microsoft Azure HDInsight Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -958,7 +958,7 @@ msrest = ">=0.6.21"
 name = "azure-mgmt-imagebuilder"
 version = "1.1.0"
 description = "Microsoft Azure Image Builder Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -975,7 +975,7 @@ msrest = ">=0.6.21"
 name = "azure-mgmt-iotcentral"
 version = "10.0.0b2"
 description = "Microsoft Azure Iot Central Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -992,7 +992,7 @@ msrest = ">=0.7.1"
 name = "azure-mgmt-iothub"
 version = "2.3.0"
 description = "Microsoft Azure IoT Hub Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -1009,7 +1009,7 @@ msrest = ">=0.7.1"
 name = "azure-mgmt-iothubprovisioningservices"
 version = "1.1.0"
 description = "Microsoft Azure IoT Hub Provisioning Services Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -1026,7 +1026,7 @@ msrest = ">=0.6.21"
 name = "azure-mgmt-keyvault"
 version = "10.1.0"
 description = "Microsoft Azure Key Vault Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -1043,7 +1043,7 @@ msrest = ">=0.6.21"
 name = "azure-mgmt-kusto"
 version = "0.3.0"
 description = "Microsoft Azure Kusto Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -1060,7 +1060,7 @@ msrestazure = ">=0.4.32,<2.0.0"
 name = "azure-mgmt-loganalytics"
 version = "13.0.0b4"
 description = "Microsoft Azure Log Analytics Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -1077,7 +1077,7 @@ msrest = ">=0.6.21"
 name = "azure-mgmt-managedservices"
 version = "1.0.0"
 description = "Microsoft Azure Managed Services Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -1094,7 +1094,7 @@ msrestazure = ">=0.4.32,<2.0.0"
 name = "azure-mgmt-managementgroups"
 version = "1.0.0"
 description = "Microsoft Azure Management Groups Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -1111,7 +1111,7 @@ msrest = ">=0.6.21"
 name = "azure-mgmt-maps"
 version = "2.0.0"
 description = "Microsoft Azure Maps Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -1128,7 +1128,7 @@ msrest = ">=0.6.21"
 name = "azure-mgmt-marketplaceordering"
 version = "1.1.0"
 description = "Microsoft Azure Market Place Ordering Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -1145,7 +1145,7 @@ msrest = ">=0.5.0"
 name = "azure-mgmt-media"
 version = "9.0.0"
 description = "Microsoft Azure Media Services Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -1162,7 +1162,7 @@ msrest = ">=0.6.21"
 name = "azure-mgmt-monitor"
 version = "5.0.1"
 description = "Microsoft Azure Monitor Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -1179,7 +1179,7 @@ msrest = ">=0.7.1"
 name = "azure-mgmt-msi"
 version = "7.0.0"
 description = "Microsoft Azure Msi Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -1196,7 +1196,7 @@ msrest = ">=0.7.1"
 name = "azure-mgmt-netapp"
 version = "9.0.1"
 description = "Microsoft Azure NetApp Files Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -1213,7 +1213,7 @@ msrest = ">=0.7.1"
 name = "azure-mgmt-network"
 version = "21.0.1"
 description = "Microsoft Azure Network Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -1230,7 +1230,7 @@ msrest = ">=0.6.21"
 name = "azure-mgmt-nspkg"
 version = "3.0.2"
 description = "Microsoft Azure Resource Management Namespace Package [Internal]"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -1246,7 +1246,7 @@ azure-nspkg = ">=3.0.0"
 name = "azure-mgmt-policyinsights"
 version = "1.1.0b4"
 description = "Microsoft Azure Policy Insights Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -1263,7 +1263,7 @@ msrest = ">=0.7.1"
 name = "azure-mgmt-privatedns"
 version = "1.0.0"
 description = "Microsoft Azure DNS Private Zones Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -1280,7 +1280,7 @@ msrest = ">=0.5.0"
 name = "azure-mgmt-rdbms"
 version = "10.2.0b8"
 description = "Microsoft Azure RDBMS Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -1297,7 +1297,7 @@ isodate = ">=0.6.1,<1.0.0"
 name = "azure-mgmt-recoveryservices"
 version = "2.2.0"
 description = "Microsoft Azure Recovery Services Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -1314,7 +1314,7 @@ msrest = ">=0.7.1"
 name = "azure-mgmt-recoveryservicesbackup"
 version = "5.1.0"
 description = "Microsoft Azure Recovery Services Backup Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -1331,7 +1331,7 @@ msrest = ">=0.7.1"
 name = "azure-mgmt-redhatopenshift"
 version = "1.2.0"
 description = "Microsoft Azure Red Hat Openshift Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -1348,7 +1348,7 @@ msrest = ">=0.7.1"
 name = "azure-mgmt-redis"
 version = "14.1.0"
 description = "Microsoft Azure Redis Cache Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -1365,7 +1365,7 @@ msrest = ">=0.7.1"
 name = "azure-mgmt-relay"
 version = "0.1.0"
 description = "Microsoft Azure Relay Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -1382,7 +1382,7 @@ msrestazure = ">=0.4.20,<2.0.0"
 name = "azure-mgmt-resource"
 version = "21.1.0b1"
 description = "Microsoft Azure Resource Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -1399,7 +1399,7 @@ msrest = ">=0.6.21"
 name = "azure-mgmt-search"
 version = "8.0.0"
 description = "Microsoft Azure Search Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -1416,7 +1416,7 @@ msrest = ">=0.5.0"
 name = "azure-mgmt-security"
 version = "3.0.0"
 description = "Microsoft Azure Security Center Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -1433,7 +1433,7 @@ msrest = ">=0.7.1"
 name = "azure-mgmt-servicebus"
 version = "8.2.0"
 description = "Microsoft Azure Service Bus Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -1450,7 +1450,7 @@ msrest = ">=0.7.1"
 name = "azure-mgmt-servicefabric"
 version = "1.0.0"
 description = "Microsoft Azure Service Fabric Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -1467,7 +1467,7 @@ msrest = ">=0.6.21"
 name = "azure-mgmt-servicefabricmanagedclusters"
 version = "1.0.0"
 description = "Microsoft Azure Servicefabricmanagedclusters Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -1484,7 +1484,7 @@ msrest = ">=0.6.21"
 name = "azure-mgmt-servicelinker"
 version = "1.2.0b1"
 description = "Microsoft Azure Service Linker Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -1501,7 +1501,7 @@ msrest = ">=0.7.1"
 name = "azure-mgmt-signalr"
 version = "1.1.0"
 description = "Microsoft Azure SignalR Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -1518,7 +1518,7 @@ msrest = ">=0.6.21"
 name = "azure-mgmt-sql"
 version = "4.0.0b8"
 description = "Microsoft Azure SQL Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -1535,7 +1535,7 @@ msrest = ">=0.7.1"
 name = "azure-mgmt-sqlvirtualmachine"
 version = "1.0.0b5"
 description = "Microsoft Azure Sql Virtual Machine Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -1552,7 +1552,7 @@ msrest = ">=0.7.1"
 name = "azure-mgmt-storage"
 version = "21.0.0"
 description = "Microsoft Azure Storage Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -1569,7 +1569,7 @@ msrest = ">=0.7.1"
 name = "azure-mgmt-synapse"
 version = "2.1.0b5"
 description = "Microsoft Azure Synapse Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -1586,7 +1586,7 @@ msrest = ">=0.6.21"
 name = "azure-mgmt-trafficmanager"
 version = "1.0.0"
 description = "Microsoft Azure Traffic Manager Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -1603,7 +1603,7 @@ msrest = ">=0.6.21"
 name = "azure-mgmt-web"
 version = "7.0.0"
 description = "Microsoft Azure Web Apps Management Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -1620,7 +1620,7 @@ msrest = ">=0.6.21"
 name = "azure-multiapi-storage"
 version = "1.0.0"
 description = "Microsoft Azure Storage Client Library for Python with multi API version support."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -1640,7 +1640,7 @@ requests = "*"
 name = "azure-nspkg"
 version = "3.0.2"
 description = "Microsoft Azure Namespace Package [Internal]"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -1653,7 +1653,7 @@ files = [
 name = "azure-storage-common"
 version = "1.4.2"
 description = "Microsoft Azure Storage Common Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -1671,7 +1671,7 @@ requests = "*"
 name = "azure-synapse-accesscontrol"
 version = "0.5.0"
 description = "Microsoft Azure Synapse AccessControl Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -1688,7 +1688,7 @@ msrest = ">=0.5.0"
 name = "azure-synapse-artifacts"
 version = "0.15.0"
 description = "Microsoft Synapse Artifacts Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -1704,7 +1704,7 @@ msrest = ">=0.7.1"
 name = "azure-synapse-managedprivateendpoints"
 version = "0.4.0"
 description = "Microsoft Azure Synapse Managed Private Endpoints Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -1721,7 +1721,7 @@ msrest = ">=0.5.0"
 name = "azure-synapse-spark"
 version = "0.2.0"
 description = "Microsoft Azure Synapse Spark Client Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -1738,7 +1738,7 @@ msrest = ">=0.5.0"
 name = "backoff"
 version = "2.2.1"
 description = "Function decoration for backoff and retry"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7,<4.0"
 files = [
@@ -1750,7 +1750,7 @@ files = [
 name = "bcrypt"
 version = "4.0.1"
 description = "Modern password hashing for your software and your servers"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -1785,7 +1785,7 @@ typecheck = ["mypy"]
 name = "beartype"
 version = "0.14.0"
 description = "Unbearably fast runtime type checking in pure Python."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7.0"
 files = [
@@ -1804,7 +1804,7 @@ test-tox-coverage = ["coverage (>=5.5)"]
 name = "cattrs"
 version = "22.2.0"
 description = "Composable complex class support for attrs and dataclasses."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -1820,7 +1820,7 @@ exceptiongroup = {version = "*", markers = "python_version < \"3.11\""}
 name = "certifi"
 version = "2023.5.7"
 description = "Python package for providing Mozilla's CA Bundle."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -1832,7 +1832,7 @@ files = [
 name = "cffi"
 version = "1.15.1"
 description = "Foreign Function Interface for Python calling C code."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -1909,7 +1909,7 @@ pycparser = "*"
 name = "chardet"
 version = "3.0.4"
 description = "Universal encoding detector for Python 2 and 3"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -1921,7 +1921,7 @@ files = [
 name = "charset-normalizer"
 version = "3.1.0"
 description = "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7.0"
 files = [
@@ -2006,7 +2006,7 @@ files = [
 name = "click"
 version = "8.1.3"
 description = "Composable command line interface toolkit"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -2021,7 +2021,7 @@ colorama = {version = "*", markers = "platform_system == \"Windows\""}
 name = "colorama"
 version = "0.4.6"
 description = "Cross-platform colored terminal text."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7"
 files = [
@@ -2033,7 +2033,7 @@ files = [
 name = "cryptography"
 version = "40.0.2"
 description = "cryptography is a package which provides cryptographic recipes and primitives to Python developers."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -2075,7 +2075,7 @@ tox = ["tox"]
 name = "dagger-io"
 version = "0.5.3"
 description = "A client package for running Dagger pipelines in Python."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.10,<4.0"
 files = [
@@ -2103,7 +2103,7 @@ server = ["strawberry-graphql (>=0.133.5)"]
 name = "deprecated"
 version = "1.2.13"
 description = "Python @deprecated decorator to deprecate old python classes, functions or methods."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 files = [
@@ -2121,7 +2121,7 @@ dev = ["PyTest", "PyTest (<5)", "PyTest-Cov", "PyTest-Cov (<2.6)", "bump2version
 name = "distro"
 version = "1.8.0"
 description = "Distro - an OS platform information API"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -2133,7 +2133,7 @@ files = [
 name = "docker"
 version = "5.0.3"
 description = "A Python library for the Docker Engine API."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -2154,7 +2154,7 @@ tls = ["cryptography (>=3.4.7)", "idna (>=2.0.0)", "pyOpenSSL (>=17.5.0)"]
 name = "exceptiongroup"
 version = "1.1.1"
 description = "Backport of PEP 654 (exception groups)"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -2169,7 +2169,7 @@ test = ["pytest (>=6)"]
 name = "fabric"
 version = "2.7.1"
 description = "High level SSH command execution"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -2190,7 +2190,7 @@ testing = ["mock (>=2.0.0,<3.0)"]
 name = "firestarter-workflows"
 version = "0.1.0"
 description = "Firestarter standard Dagger workflows"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "^3.10"
 files = []
@@ -2210,13 +2210,13 @@ build-images = ["azure-cli (==2.46.0)", "docker (==5.0.3)"]
 type = "git"
 url = "https://github.com/prefapp/firestarter-workflows"
 reference = "main"
-resolved_reference = "6609279659b74c6b2f5c3760900b8178ca12b9a1"
+resolved_reference = "aee587bd1b70c7e18f4244c648e55ae87d5ad9d6"
 
 [[package]]
 name = "gql"
 version = "3.4.1"
 description = "GraphQL client for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -2243,7 +2243,7 @@ websockets = ["websockets (>=10,<11)", "websockets (>=9,<10)"]
 name = "graphql-core"
 version = "3.2.3"
 description = "GraphQL implementation for Python, a port of GraphQL.js, the JavaScript reference implementation for GraphQL."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6,<4"
 files = [
@@ -2255,7 +2255,7 @@ files = [
 name = "h11"
 version = "0.14.0"
 description = "A pure-Python, bring-your-own-I/O implementation of HTTP/1.1"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -2267,7 +2267,7 @@ files = [
 name = "httpcore"
 version = "0.17.1"
 description = "A minimal low-level HTTP client."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -2289,7 +2289,7 @@ socks = ["socksio (>=1.0.0,<2.0.0)"]
 name = "httpx"
 version = "0.24.1"
 description = "The next generation HTTP client."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -2313,7 +2313,7 @@ socks = ["socksio (>=1.0.0,<2.0.0)"]
 name = "humanfriendly"
 version = "10.0"
 description = "Human friendly output for text interfaces using Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 files = [
@@ -2328,7 +2328,7 @@ pyreadline3 = {version = "*", markers = "sys_platform == \"win32\" and python_ve
 name = "idna"
 version = "3.4"
 description = "Internationalized Domain Names in Applications (IDNA)"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.5"
 files = [
@@ -2340,7 +2340,7 @@ files = [
 name = "invoke"
 version = "1.7.3"
 description = "Pythonic task execution"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -2352,7 +2352,7 @@ files = [
 name = "isodate"
 version = "0.6.1"
 description = "An ISO 8601 date/time/duration parser and formatter"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -2367,7 +2367,7 @@ six = "*"
 name = "javaproperties"
 version = "0.5.2"
 description = "Read & write Java .properties files"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, <4"
 files = [
@@ -2382,7 +2382,7 @@ six = ">=1.4,<2.0"
 name = "jmespath"
 version = "1.0.1"
 description = "JSON Matching Expressions"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -2394,7 +2394,7 @@ files = [
 name = "jsondiff"
 version = "2.0.0"
 description = "Diff JSON and JSON-like structures in Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -2406,7 +2406,7 @@ files = [
 name = "knack"
 version = "0.10.1"
 description = "A Command-Line Interface framework"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -2425,7 +2425,7 @@ tabulate = "*"
 name = "markdown-it-py"
 version = "2.2.0"
 description = "Python port of markdown-it. Markdown parsing, done right!"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -2450,7 +2450,7 @@ testing = ["coverage", "pytest", "pytest-cov", "pytest-regressions"]
 name = "mdurl"
 version = "0.1.2"
 description = "Markdown URL utilities"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -2462,7 +2462,7 @@ files = [
 name = "msal"
 version = "1.20.0"
 description = "The Microsoft Authentication Library (MSAL) for Python library enables your app to access the Microsoft Cloud by supporting authentication of users with Microsoft Azure Active Directory accounts (AAD) and Microsoft Accounts (MSA) using industry standard OAuth2 and OpenID Connect."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -2483,7 +2483,7 @@ broker = ["pymsalruntime (>=0.11.2,<0.14)"]
 name = "msal-extensions"
 version = "1.0.0"
 description = "Microsoft Authentication Library extensions (MSAL EX) provides a persistence API that can save your data on disk, encrypted on Windows, macOS and Linux. Concurrent data access will be coordinated by a file lock mechanism."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -2502,7 +2502,7 @@ portalocker = [
 name = "msrest"
 version = "0.7.1"
 description = "AutoRest swagger generator Python client runtime."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -2524,7 +2524,7 @@ async = ["aiodns", "aiohttp (>=3.0)"]
 name = "msrestazure"
 version = "0.6.4"
 description = "AutoRest swagger generator Python client runtime. Azure-specific module."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -2541,7 +2541,7 @@ six = "*"
 name = "multidict"
 version = "6.0.4"
 description = "multidict implementation"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -2625,7 +2625,7 @@ files = [
 name = "oauthlib"
 version = "3.2.2"
 description = "A generic, spec-compliant, thorough implementation of the OAuth request-signing logic"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -2642,7 +2642,7 @@ signedtoken = ["cryptography (>=3.0.0)", "pyjwt (>=2.0.0,<3)"]
 name = "packaging"
 version = "23.1"
 description = "Core utilities for Python packages"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -2654,7 +2654,7 @@ files = [
 name = "paramiko"
 version = "3.1.0"
 description = "SSH2 protocol library"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -2676,7 +2676,7 @@ invoke = ["invoke (>=2.0)"]
 name = "pathlib2"
 version = "2.3.7.post1"
 description = "Object-oriented filesystem paths"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -2691,7 +2691,7 @@ six = "*"
 name = "pkginfo"
 version = "1.9.6"
 description = "Query metadata from sdists / bdists / installed packages."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -2706,7 +2706,7 @@ testing = ["pytest", "pytest-cov"]
 name = "platformdirs"
 version = "3.5.1"
 description = "A small Python package for determining appropriate platform-specific dirs, e.g. a \"user data dir\"."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -2722,7 +2722,7 @@ test = ["appdirs (==1.4.4)", "covdefaults (>=2.3)", "pytest (>=7.3.1)", "pytest-
 name = "portalocker"
 version = "2.7.0"
 description = "Wraps the portalocker recipe for easy usage"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.5"
 files = [
@@ -2742,7 +2742,7 @@ tests = ["pytest (>=5.4.1)", "pytest-cov (>=2.8.1)", "pytest-mypy (>=0.8.0)", "p
 name = "psutil"
 version = "5.9.5"
 description = "Cross-platform lib for process and system monitoring in Python."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 files = [
@@ -2769,7 +2769,7 @@ test = ["enum34", "ipaddress", "mock", "pywin32", "wmi"]
 name = "pycparser"
 version = "2.21"
 description = "C parser in Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 files = [
@@ -2781,7 +2781,7 @@ files = [
 name = "pygithub"
 version = "1.58.2"
 description = "Use the full Github API v3"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -2799,7 +2799,7 @@ requests = ">=2.14.0"
 name = "pygments"
 version = "2.15.1"
 description = "Pygments is a syntax highlighting package written in Python."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -2814,7 +2814,7 @@ plugins = ["importlib-metadata"]
 name = "pyjwt"
 version = "2.7.0"
 description = "JSON Web Token implementation in Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -2835,7 +2835,7 @@ tests = ["coverage[toml] (==5.0.4)", "pytest (>=6.0.0,<7.0.0)"]
 name = "pymsalruntime"
 version = "0.13.9"
 description = "The MSALRuntime Python Interop Package"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -2858,7 +2858,7 @@ files = [
 name = "pymysql"
 version = "1.0.3"
 description = "Pure Python MySQL Driver"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -2874,7 +2874,7 @@ rsa = ["cryptography"]
 name = "pynacl"
 version = "1.5.0"
 description = "Python binding to the Networking and Cryptography (NaCl) library"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -2901,7 +2901,7 @@ tests = ["hypothesis (>=3.27.0)", "pytest (>=3.2.1,!=3.3.0)"]
 name = "pyopenssl"
 version = "23.1.1"
 description = "Python wrapper module around the OpenSSL library"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -2920,7 +2920,7 @@ test = ["flaky", "pretend", "pytest (>=3.0.1)"]
 name = "pyreadline3"
 version = "3.4.1"
 description = "A python implementation of GNU readline."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -2932,7 +2932,7 @@ files = [
 name = "pysocks"
 version = "1.7.1"
 description = "A Python SOCKS client module. See https://github.com/Anorov/PySocks for more information."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 files = [
@@ -2945,7 +2945,7 @@ files = [
 name = "python-dateutil"
 version = "2.8.2"
 description = "Extensions to the standard Python datetime module"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7"
 files = [
@@ -2960,7 +2960,7 @@ six = ">=1.5"
 name = "pywin32"
 version = "227"
 description = "Python for Window Extensions"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -2982,7 +2982,7 @@ files = [
 name = "pyyaml"
 version = "5.4.1"
 description = "YAML parser and emitter for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*"
 files = [
@@ -3021,7 +3021,7 @@ files = [
 name = "requests"
 version = "2.30.0"
 description = "Python HTTP for Humans."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -3044,7 +3044,7 @@ use-chardet-on-py3 = ["chardet (>=3.0.2,<6)"]
 name = "requests-oauthlib"
 version = "1.3.1"
 description = "OAuthlib authentication support for Requests."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 files = [
@@ -3063,7 +3063,7 @@ rsa = ["oauthlib[signedtoken] (>=3.0.0)"]
 name = "rich"
 version = "13.3.5"
 description = "Render rich text, tables, progress bars, syntax highlighting, markdown and more to the terminal"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7.0"
 files = [
@@ -3082,7 +3082,7 @@ jupyter = ["ipywidgets (>=7.5.1,<9)"]
 name = "scp"
 version = "0.13.6"
 description = "scp module for paramiko"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -3097,7 +3097,7 @@ paramiko = "*"
 name = "semver"
 version = "2.13.0"
 description = "Python helper for Semantic Versioning (http://semver.org/)"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 files = [
@@ -3109,7 +3109,7 @@ files = [
 name = "shellingham"
 version = "1.5.0.post1"
 description = "Tool to Detect Surrounding Shell"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -3121,7 +3121,7 @@ files = [
 name = "six"
 version = "1.16.0"
 description = "Python 2 and 3 compatibility utilities"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 files = [
@@ -3133,7 +3133,7 @@ files = [
 name = "sniffio"
 version = "1.3.0"
 description = "Sniff out which async library your code is running under"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -3145,7 +3145,7 @@ files = [
 name = "sshtunnel"
 version = "0.1.5"
 description = "Pure python SSH tunnels"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -3165,7 +3165,7 @@ test = ["tox (>=1.8.1)"]
 name = "tabulate"
 version = "0.9.0"
 description = "Pretty-print tabular data"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -3180,7 +3180,7 @@ widechars = ["wcwidth"]
 name = "typer"
 version = "0.9.0"
 description = "Typer, build great CLIs. Easy to code. Based on Python type hints."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -3205,7 +3205,7 @@ test = ["black (>=22.3.0,<23.0.0)", "coverage (>=6.2,<7.0)", "isort (>=5.0.6,<6.
 name = "typing-extensions"
 version = "4.5.0"
 description = "Backported and Experimental Type Hints for Python 3.7+"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -3217,7 +3217,7 @@ files = [
 name = "urllib3"
 version = "2.0.2"
 description = "HTTP library with thread-safe connection pooling, file post, and more."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -3242,7 +3242,7 @@ zstd = ["zstandard (>=0.18.0)"]
 name = "urllib3-secure-extra"
 version = "0.1.0"
 description = "Marker library to detect whether urllib3 was installed with the deprecated [secure] extra"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 files = [
@@ -3254,7 +3254,7 @@ files = [
 name = "websocket-client"
 version = "1.3.3"
 description = "WebSocket client for Python with low level API options"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -3271,7 +3271,7 @@ test = ["websockets"]
 name = "wrapt"
 version = "1.15.0"
 description = "Module for decorators, wrappers and monkey patching."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
 files = [
@@ -3356,7 +3356,7 @@ files = [
 name = "xmltodict"
 version = "0.13.0"
 description = "Makes working with XML feel like you are working with JSON"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.4"
 files = [
@@ -3368,7 +3368,7 @@ files = [
 name = "yarl"
 version = "1.9.2"
 description = "Yet another URL library"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -3455,4 +3455,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "6a3c19954de5fbca083fff03d14ef86490d5f6465f9afb0a6d6aab6e72fc7f2d"
+content-hash = "7150802c2153be2e2d90c82c7f79a7c8a6352cd34442d40a4111f0cb7a2b35ef"
