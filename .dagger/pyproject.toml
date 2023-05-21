@@ -9,7 +9,12 @@ firestarter = "firestarter.cli:main"
 
 [tool.poetry.dependencies]
 python = "^3.10"
+
+[tool.poetry.group.build_images]
 firestarter-workflows = {git = "https://github.com/prefapp/firestarter-workflows", rev = "main", extras=["build_images"]}
+
+[tool.poetry.group.pr_verify]
+firestarter-workflows = {git = "https://github.com/prefapp/firestarter-workflows", rev = "main", extras=["pr_verify"]}
 
 [build-system]
 requires = ["poetry-core"]
