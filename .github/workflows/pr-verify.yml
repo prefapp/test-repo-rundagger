@@ -5,11 +5,16 @@ jobs:
   call-action:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
       - name: Call composite action
         uses: prefapp/run-dagger-py@main
         with:
           workflow: pr_verify
           config_file: .github/firestarter.yml
+          working_directory: .
+          pyproject_path: .dagger
           vars: |
             foo='bar'
           secrets: |
