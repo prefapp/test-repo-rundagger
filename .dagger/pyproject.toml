@@ -5,11 +5,11 @@ description = ""
 authors = ["Javier Gomez Rodriguez <javier.gomez@prefapp.es>"]
 
 [tool.poetry.scripts]
-dagger = "firestarter.cli.parser:parse"
+firestarter = "firestarter.cli:main"
 
 [tool.poetry.dependencies]
-python = "^3.11"
-firestarter-workflows = {git = "https://github.com/prefapp/firestarter-workflows", rev = "main", extras=["on-premises"]}
+python = "^3.10"
+firestarter-workflows = {git = "https://github.com/prefapp/firestarter-workflows", rev = "main", extras=["on_premises"]}
 
 [build-system]
 requires = ["poetry-core"]
