@@ -30,9 +30,10 @@ jobs:
       - name: Call run-dagger-py action
         uses: prefapp/run-dagger-py@main
         with:
-          working_directory: build/.dagger
+          working_directory: build
+          pyproject_path: .dagger
           workflow: build_images
-          config_file: config/config.yaml
+          config_file: ../config/config.yaml
           vars: |
             repo_name="${{ github.repository }}"
             from_point="${{ github.event.inputs.from }}"
