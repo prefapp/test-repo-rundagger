@@ -1,4 +1,4 @@
-name: Dagger magic
+name: On-premises
 on:
   workflow_dispatch:
     inputs:
