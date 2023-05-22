@@ -2210,7 +2210,7 @@ build-images = ["azure-cli (==2.46.0)", "docker (==5.0.3)"]
 type = "git"
 url = "https://github.com/prefapp/firestarter-workflows"
 reference = "main"
-resolved_reference = "2346d4ec6401c44f2149c97d964924e6108adab2"
+resolved_reference = "d4e114b1ac185c237e4336d18f081b1262cb0307"
 
 [[package]]
 name = "gql"
