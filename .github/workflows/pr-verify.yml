@@ -11,7 +11,7 @@ jobs:
       - name: Call composite action
         uses: prefapp/run-dagger-py@main
         with:
-          workflow: pr_verify
+          workflow: local_pr_verify
           config_file: .github/firestarter.yml
           pyproject_path: .dagger
           vars: |
