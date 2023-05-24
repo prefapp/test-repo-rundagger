@@ -33,7 +33,7 @@ jobs:
           working_directory: build
           pyproject_path: .dagger
           workflow: build_images
-          config_file: ../config/.dagger/config.yaml
+          config_file: ../config/.dagger/firestarter_build_images.yaml
           vars: |
             repo_name="${{ github.repository }}"
             from_point="${{ github.event.inputs.from }}"

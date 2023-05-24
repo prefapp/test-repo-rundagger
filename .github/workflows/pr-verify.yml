@@ -16,7 +16,7 @@ jobs:
         uses: prefapp/run-dagger-py@main
         with:
           workflow: pr_verify
-          config_file: .github/firestarter.yml
+          config_file: .github/firestarter_pr_verify.yml
           pyproject_path: .dagger
           vars: |
             foo="bar"
