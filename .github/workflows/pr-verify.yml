@@ -8,11 +8,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         
-      - name: Debug
-        run: |
-          env
-
-      - name: Call composite action
+      - name: Run PR verify workflow
         uses: prefapp/run-dagger-py@main
         with:
           workflow: pr_verify
