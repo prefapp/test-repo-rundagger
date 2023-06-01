@@ -1,0 +1,45 @@
+name: Build image
+on:
+  workflow_dispatch:
+    inputs:
+      from:
+        type: string
+        description: 'Origin commit or tag'
+        required: true
+        default: ''
+      on_premises:
+        type: string
+        description: 'On-premises name/s | one (alone), several(separated by commas) or all (*)'
+        required: true
+        default: '*' # all
+jobs:
+  build-images:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.inputs.from }}
+          path: build
+
+      - name: Checkout repository to get config file
+        uses: actions/checkout@v3
+        with:
+          path: config
+
+      - name: Call run-dagger-py action
+        uses: prefapp/run-dagger-py@main
+        with:
+          working_directory: build
+          pyproject_path: .dagger
+          workflow: build_images
+          config_file: ../config/.dagger/firestarter_build_images.yaml
+          vars: |
+            repo_name="${{ github.repository }}"
+            from_point="${{ github.event.inputs.from }}"
+            on_premises="${{ github.event.inputs.on_premises }}"
+            container_structure_filename=".dagger/struct.yaml"
+            login_required=false
+            
+          secrets: |
+            github_token="${{ github.token }}"
