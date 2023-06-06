@@ -20,7 +20,7 @@ jobs:
           default-branch: main
 
   publish:
-    if: needs.release-calculate.outputs.result != '[]'
+    if: needs.release-please.outputs.release != '[]'
     name: Publish Image
     needs:
       - release-calculate
