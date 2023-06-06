@@ -1,0 +1,39 @@
+on:
+  push:
+    branches:
+      - main
+name: Run Release Please
+jobs:
+  release-please:
+    name: Release Please Manifest
+    runs-on: ubuntu-latest
+    outputs:
+      paths_released: ${{ steps.release.outputs.paths_released }}
+      releases_info: ${{ toJSON(steps.release.outputs) }}
+      tag_name: ${{ steps.release.outputs.tag_name }}
+    steps:
+      - uses: google-github-actions/release-please-action@v3
+        id: release
+        with:
+          command: manifest
+          token: ${{ secrets.GITHUB_TOKEN }}
+          default-branch: main
+
+  publish:
+    if: needs.release-calculate.outputs.result != '[]'
+    name: Publish Image
+    needs:
+      - release-calculate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Invoke Container Image Publish Workflow
+        uses: benc-uk/workflow-dispatch@v1
+        with:
+          workflow: build_image.yml
+          inputs: "{from: ${{ needs.release-please.outputs.tag_name }}, on_premises: "*"}"
+
+      - name: Invoke Artifact Publish Workflow
+        uses: benc-uk/workflow-dispatch@v1
+        with:
+          workflow: build_artifact.yml
+          inputs: "{from: ${{ needs.release-please.outputs.tag_name }}, targets: "*"}"
