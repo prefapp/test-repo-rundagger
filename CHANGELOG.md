@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.3](https://github.com/prefapp/test-repo-rundagger/compare/test-repo-rundagger-v0.2.2...test-repo-rundagger-v0.2.3) (2023-06-06)
+
+
+### Bug Fixes
+
+* json format on input call ([67cbf89](https://github.com/prefapp/test-repo-rundagger/commit/67cbf898c5ad7264705b54b12608063ce08f51be))
+
 ## [0.2.2](https://github.com/prefapp/test-repo-rundagger/compare/test-repo-rundagger-v0.2.1...test-repo-rundagger-v0.2.2) (2023-06-06)
 
 
