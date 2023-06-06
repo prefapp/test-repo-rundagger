@@ -30,7 +30,7 @@ jobs:
         uses: benc-uk/workflow-dispatch@v1
         with:
           workflow: build_image.yml
-          inputs: "{from: ${{ needs.release-please.outputs.tag_name }}, on_premises: "*"}"
+          inputs: "{from: ${{ needs.release-please.outputs.tag_name }}, on_premises: '*'}"
 
       - name: Invoke Artifact Publish Workflow
         uses: benc-uk/workflow-dispatch@v1
