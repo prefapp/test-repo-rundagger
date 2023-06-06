@@ -49,11 +49,11 @@ jobs:
         uses: benc-uk/workflow-dispatch@v1
         with:
           workflow: build_image.yml
-          inputs: "{from: ${{ needs.release-please.outputs.tag_name }}, on_premises: *}"
+          inputs: '{"from": "${{ needs.release-please.outputs.tag_name }}", "on_premises": "*"}'
 
       - name: Invoke Artifact Publish Workflow
         if: steps.check-workflow-existence.outputs.build_artifact_workflow_exists
         uses: benc-uk/workflow-dispatch@v1
         with:
           workflow: build_artifact.yml
-          inputs: "{from: ${{ needs.release-please.outputs.tag_name }}, targets: '*'}"
+          inputs: '{"from": "${{ needs.release-please.outputs.tag_name }}", "targets": "*"}'
