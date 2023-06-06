@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/prefapp/test-repo-rundagger/compare/test-repo-rundagger-v0.2.0...test-repo-rundagger-v0.2.1) (2023-06-06)
+
+
+### Bug Fixes
+
+* Update release-please.yaml ([2405993](https://github.com/prefapp/test-repo-rundagger/commit/240599349cb96a72ba1cfac81ce4369cdd07d87a))
+
 ## [0.2.0](https://github.com/prefapp/test-repo-rundagger/compare/test-repo-rundagger-v0.1.0...test-repo-rundagger-v0.2.0) (2023-06-06)
 
 
