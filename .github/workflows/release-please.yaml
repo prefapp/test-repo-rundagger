@@ -2,7 +2,9 @@ on:
   push:
     branches:
       - main
+
 name: Run Release Please
+
 jobs:
   release-please:
     name: Release Please Manifest
@@ -11,9 +13,12 @@ jobs:
       paths_released: ${{ steps.release.outputs.paths_released }}
       releases_info: ${{ toJSON(steps.release.outputs) }}
       tag_name: ${{ steps.release.outputs.tag_name }}
-      releases_created: ${{ steps.release.outputs.releases_created }}
     steps:
-      - uses: google-github-actions/release-please-action@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Use Release Please Action
+        uses: google-github-actions/release-please-action@v3
         id: release
         with:
           command: manifest
@@ -21,22 +26,33 @@ jobs:
           default-branch: main
 
   publish:
-    if: needs.release-please.outputs.releases_created
-    name: Publish Image
+    if: needs.release-please.outputs.release != '[]'
+    name: Publish Workflows
     needs:
       - release-please
     runs-on: ubuntu-latest
     steps:
+      - name: Check Workflow Existence
+        id: check-workflow-existence
+        run: |
+          if [ -f .github/workflows/build_image.yml ]; then
+            echo "build_image_workflow_exists=true" >> $GITHUB_OUTPUT
+          fi
+          
+          if [ -f .github/workflows/build_artifact.yml ]; then
+            echo "build_artifact_workflow_exists=true" >> $GITHUB_OUTPUT
+          fi
+
       - name: Invoke Container Image Publish Workflow
+        if: steps.check-workflow-existence.outputs.build_image_workflow_exists == 'true'
         uses: benc-uk/workflow-dispatch@v1
         with:
           workflow: build_image.yml
-          inputs: '{"from": "${{ needs.release-please.outputs.tag_name }}", "on_premises": "*"}'
-          token: ${{ secrets.GITHUB_TOKEN }}
+          inputs: "{from: ${{ needs.release-please.outputs.tag_name }}, on_premises: *}"
 
       - name: Invoke Artifact Publish Workflow
+        if: steps.check-workflow-existence.outputs.build_artifact_workflow_exists == 'true'
         uses: benc-uk/workflow-dispatch@v1
         with:
           workflow: build_artifact.yml
-          inputs: '{"from": "${{ needs.release-please.outputs.tag_name }}", "targets": "*"}'
-          token: ${{ secrets.GITHUB_TOKEN }}
+          inputs: "{from: ${{ needs.release-please.outputs.tag_name }}, targets: '*'}"
