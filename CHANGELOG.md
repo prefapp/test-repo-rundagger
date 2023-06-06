@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/prefapp/test-repo-rundagger/compare/test-repo-rundagger-v0.2.1...test-repo-rundagger-v0.2.2) (2023-06-06)
+
+
+### Bug Fixes
+
+* inputs workflow calls ([863404b](https://github.com/prefapp/test-repo-rundagger/commit/863404b5b86d033d57bde93c1f0968810b730df6))
+
 ## [0.2.1](https://github.com/prefapp/test-repo-rundagger/compare/test-repo-rundagger-v0.2.0...test-repo-rundagger-v0.2.1) (2023-06-06)
 
 
