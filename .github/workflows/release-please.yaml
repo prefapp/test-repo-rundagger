@@ -11,6 +11,7 @@ jobs:
       paths_released: ${{ steps.release.outputs.paths_released }}
       releases_info: ${{ toJSON(steps.release.outputs) }}
       tag_name: ${{ steps.release.outputs.tag_name }}
+      releases_created: ${{ steps.release.outputs.releases_created }}
     steps:
       - uses: google-github-actions/release-please-action@v3
         id: release
@@ -20,7 +21,7 @@ jobs:
           default-branch: main
 
   publish:
-    if: needs.release-please.outputs.release != '[]'
+    if: needs.release-please.outputs.releases_created
     name: Publish Image
     needs:
       - release-please
