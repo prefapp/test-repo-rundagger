@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.4](https://github.com/prefapp/test-repo-rundagger/compare/test-repo-rundagger-v0.2.3...test-repo-rundagger-v0.2.4) (2023-06-06)
+
+
+### Bug Fixes
+
+* condition publish ([e20adb6](https://github.com/prefapp/test-repo-rundagger/commit/e20adb67c7ed5e36cbd61c2f607fc27e6d8741e9))
+
 ## [0.2.3](https://github.com/prefapp/test-repo-rundagger/compare/test-repo-rundagger-v0.2.2...test-repo-rundagger-v0.2.3) (2023-06-06)
 
 
