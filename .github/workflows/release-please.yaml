@@ -25,7 +25,7 @@ jobs:
 
   publish:
     if: needs.release-please.outputs.releases_created
-    name: Publish Workflows
+    name: Publish
     needs:
       - release-please
     runs-on: ubuntu-latest
