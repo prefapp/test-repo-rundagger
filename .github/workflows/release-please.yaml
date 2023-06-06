@@ -4,7 +4,6 @@ on:
       - main
 
 name: Run Release Please
-
 jobs:
   release-please:
     name: Release Please Manifest
