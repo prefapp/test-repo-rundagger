@@ -23,7 +23,7 @@ jobs:
     if: needs.release-please.outputs.release != '[]'
     name: Publish Image
     needs:
-      - release-calculate
+      - release-please
     runs-on: ubuntu-latest
     steps:
       - name: Invoke Container Image Publish Workflow
