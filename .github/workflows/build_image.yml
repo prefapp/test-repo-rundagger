@@ -27,7 +27,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-region: eu-west-1
-          role-to-assume: ${{ vars.S3_ROLE }}
+          role-to-assume: ${{ vars.OIDC_ECR_ROLE }}
           role-session-name: OIDCSession
  
       - name: Login to Amazon ECR
