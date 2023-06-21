@@ -16,16 +16,6 @@ jobs:
   build-images:
     runs-on: ubuntu-22.04
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-        with:
-          ref: ${{ github.event.inputs.from }}
-          path: build
-
-      - name: Checkout repository to get config file
-        uses: actions/checkout@v3
-        with:
-          path: config
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
@@ -37,6 +27,17 @@ jobs:
       - name: Login to Amazon ECR
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v1
+
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.inputs.from }}
+          path: build
+
+      - name: Checkout repository to get config file
+        uses: actions/checkout@v3
+        with:
+          path: config
 
       - name: Call run-dagger-py action
         uses: prefapp/run-dagger-py@main
