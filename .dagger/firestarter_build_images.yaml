@@ -1,6 +1,6 @@
 images:
   example:
-    registry: ttl.sh
+    registry: 041728615317.dkr.ecr.us-west-2.amazonaws.com
     repository: foo/bar
     build_args:
       REACT_APP_API_URL: prod.local
