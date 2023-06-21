@@ -1,6 +1,6 @@
 images:
   example:
-    registry: 041728615317.dkr.ecr.us-west-2.amazonaws.com
+    registry: 041728615317.dkr.ecr.eu-west-1.amazonaws.com
     repository: foo/bar
     build_args:
       REACT_APP_API_URL: prod.local
