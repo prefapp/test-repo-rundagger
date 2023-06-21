@@ -27,6 +27,17 @@ jobs:
         with:
           path: config
 
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-region: eu-west-1
+          role-to-assume: ${{ vars.S3_ROLE }}
+          role-session-name: OIDCSession
+ 
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v1
+
       - name: Call run-dagger-py action
         uses: prefapp/run-dagger-py@main
         with:
