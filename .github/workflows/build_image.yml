@@ -39,7 +39,8 @@ jobs:
             from_point="${{ github.event.inputs.from }}"
             on_premises="${{ github.event.inputs.on_premises }}"
             container_structure_filename=".dagger/struct.yaml"
-            login_required=false
+            login_required=true
+            publish=true
             
           secrets: |
             github_token="${{ github.token }}"
