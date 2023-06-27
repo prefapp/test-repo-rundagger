@@ -2,6 +2,7 @@ images:
   example:
     registry: 041728615317.dkr.ecr.eu-west-1.amazonaws.com
     repository: oidc-poc
+    auth_strategy: aws_oidc
     build_args:
       REACT_APP_API_URL: prod.local
     dockerfile: './Dockerfile'
