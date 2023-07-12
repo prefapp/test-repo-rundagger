@@ -29,10 +29,13 @@ jobs:
           aws-region: eu-west-1
           role-to-assume: ${{ vars.OIDC_ECR_ROLE }}
           role-session-name: OIDCSession
- 
-      - name: Login to Amazon ECR
-        id: login-ecr
-        uses: aws-actions/amazon-ecr-login@v1
+
+      - name: 'Az OIDC login'
+        uses: azure/login@v1
+        with:
+            client-id: ${{ vars.AZURE_CLIENT_ID }}
+            tenant-id: ${{ vars.AZURE_TENANT_ID }}
+            subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
 
       - name: Checkout repository
         uses: actions/checkout@v3
