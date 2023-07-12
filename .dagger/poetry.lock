@@ -546,7 +546,7 @@ build-images = ["azure-identity (>=1.13.0,<2.0.0)", "azure-keyvault-secrets (>=4
 type = "git"
 url = "https://github.com/prefapp/firestarter-workflows"
 reference = "main"
-resolved_reference = "c7a7e091de33b51f6abad0b0f203f51bc948f035"
+resolved_reference = "56dc951d616b79d7def55eba7e62411b91fdbaf4"
 
 [[package]]
 name = "gql"
