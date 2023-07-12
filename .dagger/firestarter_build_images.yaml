@@ -1,8 +1,15 @@
 images:
-  example:
+  aws-example:
     registry: 041728615317.dkr.ecr.eu-west-1.amazonaws.com
     repository: oidc-poc
     auth_strategy: aws_oidc
+    build_args:
+      REACT_APP_API_URL: prod.local
+    dockerfile: './Dockerfile'
+  azure-example:
+    registry: prefappacr.azurecr.io
+    repository: apps/backend/hellok8s
+    auth_strategy: azure_oidc
     build_args:
       REACT_APP_API_URL: prod.local
     dockerfile: './Dockerfile'
