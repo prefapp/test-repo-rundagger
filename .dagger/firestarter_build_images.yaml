@@ -8,7 +8,7 @@ images:
     dockerfile: './Dockerfile'
   azure-example:
     registry: prefappacr.azurecr.io
-    repository: apps/backend/hellok8s
+    repository: oidc-poc
     auth_strategy: azure_oidc
     build_args:
       REACT_APP_API_URL: prod.local
