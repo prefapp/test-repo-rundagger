@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.3.0](https://github.com/prefapp/test-repo-rundagger/compare/test-repo-rundagger-v0.2.8...test-repo-rundagger-v0.3.0) (2024-03-26)
+
+
+### Features
+
+* provision CODEOWNERS file ([932351c](https://github.com/prefapp/test-repo-rundagger/commit/932351c0194fddaa56b0f9d5d56cca94c5ec75cb))
+* provision CODEOWNERS file ([b63a492](https://github.com/prefapp/test-repo-rundagger/commit/b63a492bbe40a2613088de84f883cc2e61f22dbe))
+* provision CODEOWNERS file ([4a98118](https://github.com/prefapp/test-repo-rundagger/commit/4a981189a8a4108f7d02082483d10a716e7e4ba3))
+* Update workflow dependency ([#13](https://github.com/prefapp/test-repo-rundagger/issues/13)) ([6a60304](https://github.com/prefapp/test-repo-rundagger/commit/6a60304833e76e2ffca9d966623a00265196426f))
+
+
+### Bug Fixes
+
+* job name ([efff454](https://github.com/prefapp/test-repo-rundagger/commit/efff454649be59dfde8a3b179c704d169d237ed1))
+
 ## [0.2.8](https://github.com/prefapp/test-repo-rundagger/compare/test-repo-rundagger-v0.2.7...test-repo-rundagger-v0.2.8) (2023-06-06)
 
 
